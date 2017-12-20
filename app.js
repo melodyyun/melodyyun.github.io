@@ -32,22 +32,39 @@ var order =[0, 1, 2, 0]; //Rock < Paper < Scissors < Rock (0<1<2<0)
 
 var chooseWinner = function(player, cpu){
   if(order[player] === order[cpu]){
+    backgroundColor('#f9eb14');
     return "The game is tied. Try again?";
   }
   if(order[player] === order[cpu + 1]){
+    backgroundColor('#66b266');
     score++;
     return "You won!";
   }else{
+    backgroundColor('#FF7F7F');
     score--;
     return "You lose :(";
   }
 }
+
+//colors:   red(#FF7F7F)
 
 //console.log(chooseWinner(1,0));
 
 /**
 * UI
 */
+
+//change color of background
+
+
+function backgroundColor(color){
+  document.body.style.backgroundColor = color;
+}
+//  init: function changeBackground(color) {
+//   document.body.style.background = color;
+//}
+
+
 
 
 var paragraph = document.querySelector('p');
