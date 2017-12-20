@@ -1,6 +1,6 @@
 body{
   background: radial-gradient(skyblue, white);
-  font-family: monospace;
+  font-family: 'Barlow', sans-serif;
   text-align: center;
   font-size: 2rem;
   position: relative;
